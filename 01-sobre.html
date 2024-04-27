@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Godai - Paulo Set</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			a {
+   			 text-decoration: none;
+ 			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #148737;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #94f7b2;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #148737;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Página Pessoal - Paulo Set</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="01-sobre.html">Sobre</a></li>
+					<li><a href="02-projetos.html">Projetos</a></li>
+					<li><a href="03-contato.html">Contato</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/pauloset//" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/paulo.set/" target="_blank">Instagram</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h2>Paulo Set</h2>
+
+				<p>Especialista em Inovação Bioinspirada na <strong>GODAI</strong> </p>
+				<p>
+					⚡️Olá, meu nome é Paulo Set e o meu propósito é te ajudar a planejar e executar projetos incríveis de maneira prática, criativa e sustentável! A partir da inovação bioinspirada eu treino pessoas, desenvolvo tecnologias e potencializo negócios, contribuindo para a criação de um mundo mais abundante, inclusivo e regenerativo! 🌀 Nos últimos 10 anos, tenho atuado em projetos de inovação, conservação ambiental e aprendizagem, tendo atendido multinacionais do setor farmacêutico, automobilístico, agroindustrial, logístico e energético, além de startups e ONGs... Mas, na verdade, o que realmente importa é: O que podemos fazer JUNTOS e AGORA?
+				</p>
+
+				<div>
+					<picture>
+						<source media="(max-width: 800px" srcset=".\img\foto_paulo_sofa_sm.jpg" alt="Paulo Set">
+						<source media="(max-width: 1200px" srcset=".\img\foto_paulo_sofa_desk.jpg" alt="Paulo Set">
+						<img width="100%" src=".\img\foto_paulo_sofa_desk.jpg" alt="Paulo Set">
+					</picture>
+				</div>
+				<br>
+				
+				<p><strong>Mini-currículo</strong></p>
+				<p>
+					Biólogo e especialista em inovação bioinspirada com mais de 10 anos de experiência desenvolvendo projetos de educação corporativa, desenvolvimento de novos produtos, melhoria de processos e conservação ambiental, tendo atendido multinacionais do setor farmacêutico, automobilístico, agroindustrial, logístico e energético, além de startups e ONGs. É graduado pela UNESP (Universidade Estadual Paulista), possui MBA pela FGV (Fundação Getúlio Vargas) e é certificado pelo PMI (Project Management Institute), além de ter formações em design thinking, métodos ágeis, gestão de processos e ciência de dados. Acredita no desenvolvimento de pessoas, tecnologias e negócios para a criação de um mundo mais abundante, inclusivo e regenerativo!
+
+					<br><br>(Re)conecte-se a sua natureza! 🙂
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Paulo Set</p>
+		</footer>
+		
+	</body>
+</html>

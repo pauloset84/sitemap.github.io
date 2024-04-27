@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Godai - Paulo Set</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			a {
+   			 text-decoration: none;
+ 			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #148737;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #94f7b2;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #148737;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Página Pessoal - Paulo Set</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="01-sobre.html">Sobre</a></li>
+					<li><a href="02-projetos.html">Projetos</a></li>
+					<li><a href="03-contato.html">Contato</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/pauloset//" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/paulo.set/" target="_blank">Instagram</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h2>Paulo Set</h2>
+
+				<p><strong>PROJETOS</strong> </p>
+				<br>
+				<table width=100% align="center">
+				  <tr align="center">
+				    <td width=50%> <img width="75%" src=".\img\foto_paulo5.jpg" alt="Paulo Set"></td>
+				    <td width=50%> <img width="75%" src=".\img\foto_paulo3.jpg" alt="Paulo Set"></td>
+				  </tr>
+				  <tr align="center">
+				    <td width=50%> Palestra</td>
+				    <td width=50%> Workshop</td>
+				  </tr>
+				  <tr align="center">
+				    <td width=50%> <img width="75%" src=".\img\foto_paulo2.jpg" alt="Paulo Set"></td>
+				    <td width=50%> <img width="75%" src=".\img\foto_paulo4.jpg" alt="Paulo Set"></td>
+				  </tr>
+				  <tr align="center">
+				   <td width=50%> Mentoria</td>
+				   <td width=50%> Consultoria</td>
+				  </tr>
+				</table>
+				<br>
+				<p><strong>Chegou a sua hora!</strong> </p>
+				<p>
+					Desenvolva soluções que entregam lucratividade e responsabilidade socioambiental a partir de uma abordagem de inovação bioinspirada conectada às principais tecnologias do mercado. Nesta modalidade, que pode ser presencial e/ou remota, é possível ter todo o suporte necessário para projetos como:
+
+					<br><br>O trabalho a ser desenvolvido será planejado e gerenciado a partir das melhores práticas em gestão de projeto disponíveis no mercado, contando também com um monitoramento constante de métricas de desempenho, que orientarão os ajustes necessários para o projeto. Além disso, rotinas de comunicação com as partes interessadas e técnicas de gerenciamento de riscos de projeto serão aplicadas visando a entrega com eficiência e eficácia.
+
+					<br><br>Vamos juntos? 🙂
+				</p>
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Paulo Set</p>
+		</footer>
+		
+	</body>
+</html>

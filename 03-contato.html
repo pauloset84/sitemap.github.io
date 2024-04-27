@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+			a {
+   			 text-decoration: none;
+ 			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #148737;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #94f7b2;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #148737;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Página Pessoal - Paulo Set</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="01-sobre.html">Sobre</a></li>
+					<li><a href="02-projetos.html">Projetos</a></li>
+					<li><a href="03-contato.html">Contato</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/pauloset//" target="_blank">LinkedIn</a></li>
+					<li><a href="https://www.instagram.com/paulo.set/" target="_blank">Instagram</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual linguagem você prefere?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<input type="radio" name="linguagens" value="css"> CSS
+							<input type="radio" name="linguagens" value="javascript"> JavaScript
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais linguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="html"> HTML
+							<input type="checkbox" name="linguagens" value="css"> CSS
+							<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit" >
+					</div>
+					
+
+				</form>
+
+				
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Paulo Set</p>
+		</footer>
+		
+	</body>
+</html>
